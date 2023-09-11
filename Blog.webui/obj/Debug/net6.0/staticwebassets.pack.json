@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\images-article\\123",
+      "PackagePath": "staticwebassets\\images\\images-article"
+    },
+    {
       "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\js\\JavaScript.js",
       "PackagePath": "staticwebassets\\js\\JavaScript.js"
     },

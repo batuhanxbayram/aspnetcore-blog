@@ -1,8 +1,3 @@
-C:\Users\Monster\source\repos\Blog\Blog.Data\obj\Debug\net6.0\Blog.Data.csproj.AssemblyReference.cache
-C:\Users\Monster\source\repos\Blog\Blog.Data\obj\Debug\net6.0\Blog.Data.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Monster\source\repos\Blog\Blog.Data\obj\Debug\net6.0\Blog.Data.AssemblyInfoInputs.cache
-C:\Users\Monster\source\repos\Blog\Blog.Data\obj\Debug\net6.0\Blog.Data.AssemblyInfo.cs
-C:\Users\Monster\source\repos\Blog\Blog.Data\obj\Debug\net6.0\Blog.Data.csproj.CoreCompileInputs.cache
 C:\Users\Monster\source\repos\Blog\Blog.Data\bin\Debug\net6.0\Blog.Data.deps.json
 C:\Users\Monster\source\repos\Blog\Blog.Data\bin\Debug\net6.0\Blog.Data.runtimeconfig.json
 C:\Users\Monster\source\repos\Blog\Blog.Data\bin\Debug\net6.0\Blog.Data.dll
@@ -11,6 +6,11 @@ C:\Users\Monster\source\repos\Blog\Blog.Data\bin\Debug\net6.0\Blog.Core.dll
 C:\Users\Monster\source\repos\Blog\Blog.Data\bin\Debug\net6.0\Blog.Entity.dll
 C:\Users\Monster\source\repos\Blog\Blog.Data\bin\Debug\net6.0\Blog.Entity.pdb
 C:\Users\Monster\source\repos\Blog\Blog.Data\bin\Debug\net6.0\Blog.Core.pdb
+C:\Users\Monster\source\repos\Blog\Blog.Data\obj\Debug\net6.0\Blog.Data.csproj.AssemblyReference.cache
+C:\Users\Monster\source\repos\Blog\Blog.Data\obj\Debug\net6.0\Blog.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Monster\source\repos\Blog\Blog.Data\obj\Debug\net6.0\Blog.Data.AssemblyInfoInputs.cache
+C:\Users\Monster\source\repos\Blog\Blog.Data\obj\Debug\net6.0\Blog.Data.AssemblyInfo.cs
+C:\Users\Monster\source\repos\Blog\Blog.Data\obj\Debug\net6.0\Blog.Data.csproj.CoreCompileInputs.cache
 C:\Users\Monster\source\repos\Blog\Blog.Data\obj\Debug\net6.0\Blog.Data.csproj.CopyComplete
 C:\Users\Monster\source\repos\Blog\Blog.Data\obj\Debug\net6.0\Blog.Data.dll
 C:\Users\Monster\source\repos\Blog\Blog.Data\obj\Debug\net6.0\refint\Blog.Data.dll

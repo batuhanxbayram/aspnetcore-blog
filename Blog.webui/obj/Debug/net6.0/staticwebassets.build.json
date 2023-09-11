@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3Y9snKF3KggmJyReOb4sUQSJbd/zYCTs0/SJJvFtGfE=",
+  "Hash": "LTeBFFMWOj9XMf9fUyfzBDIZb6vYd3aWzU9QjYiPcHQ=",
   "Source": "Blog.Webui",
   "BasePath": "_content/Blog.Webui",
   "Mode": "Default",
@@ -151,6 +151,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\images-article\\123",
+      "SourceId": "Blog.Webui",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\",
+      "BasePath": "_content/Blog.Webui",
+      "RelativePath": "images/images-article/123",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\images-article\\123"
     },
     {
       "Identity": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\js\\articleIndex.js",
