@@ -10,7 +10,7 @@ using System.ComponentModel.DataAnnotations;
 using NToastNotify;
 
 namespace Blog.Webui.Areas.Admin.Controllers
-{
+{ // yorum 
 	[Area("Admin")]
 	public class ArticleController : Controller
 	{
