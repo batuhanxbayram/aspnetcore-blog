@@ -1,0 +1,67 @@
+﻿@model List<Blog.Entity.DTOs.Articles.ArticleDTO>
+
+
+<div class="container-xxl flex-grow-1 container-p-y">
+
+
+	<h4 class="fw-bold py-3 mb-4">
+		<span class="text-muted fw-light">Tables /</span> Makaleler
+	</h4>
+
+	<!-- Basic Bootstrap Table -->
+	<div class="card">
+
+		<div class="table-responsive text-nowrap m-3">
+			<a class="btn btn-success mb-3" asp-area="Admin" asp-controller="Article" asp-action="Add">Makale Ekle </a>
+			<table class="table table-bordered m-3" id="articlesTable" width="%100" cellspacing="0">
+				<thead>
+					<tr>
+						<th>Başlık</th>
+						<th>Kategori</th>
+						<th>Oluşturulma Tarihi</th>
+						<th>Oluşturan</th>
+						<th>Durum</th>
+						<th>İşlemler</th>
+					</tr>
+				</thead>
+				<tfoot>
+					<tr>
+						<th>Başlık</th>
+						<th>Kategori</th>
+						<th>Oluşturulma Tarihi</th>
+						<th>Oluşturan</th>
+						<th>Durum</th>
+						<th>İşlemler</th>
+					</tr>
+				</tfoot>
+				<tbody class="table-border-bottom-0">
+					@foreach (var item in Model)
+					{
+						<tr name="@item.Id">
+							<td>@item.Title</td>
+							<td>@item.Category.Name</td>
+							<td>@item.CreatedDate.ToShortDateString()</td>
+							<td>@item.CreatedBy</td>
+							<td>@(item.IsDeleted ? "Aktif Değil" : "Aktif")</td>
+							<td>
+								<a class="btn btn-primary btn-sm" asp-area="Admin" asp-controller="Article" asp-action="Update" data-id="@item.Id" asp-route-articleId="@item.Id">
+									<i class="bx bxs-edit"></i>
+								</a>
+								<a class="btn btn-danger btn-sm" asp-area="Admin" asp-controller="Article" asp-action="Delete" data-id="@item.Id" asp-route-articleId="@item.Id">
+									<i class='bx bx-message-alt-x'></i>
+								</a>
+							</td> 
+						</tr>
+					}
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<!--/ Basic Bootstrap Table -->
+
+</div>
+
+@section Scripts {
+	<script src="~/js/articleIndex.js" type="application/ecmascript"></script>
+}
+
