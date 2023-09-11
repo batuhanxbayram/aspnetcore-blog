@@ -19,5 +19,6 @@ namespace Blog.Webui.Areas.Admin.Controllers
 			var articles =await _articleService.GetAllArticleWithCategoryNonDeletedAsync();
 			return View(articles);
 		}
+
 	}
 }
