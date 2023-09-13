@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Blog.Entity.DTOs.Categories;
+using Blog.Entity.Entities;
+using Microsoft.AspNetCore.Http;
 
 namespace Blog.Entity.DTOs.Articles
 {
@@ -14,6 +16,8 @@ namespace Blog.Entity.DTOs.Articles
 		 public string Content { get; set; }
 		 public Guid CategoryId { get; set; }
 		 public IList<CategoryDTO> Categories { get; set; }
+		 public IFormFile? Photo { get; set; }
+		 public Image Image { get; set; }
 
 	}
 }

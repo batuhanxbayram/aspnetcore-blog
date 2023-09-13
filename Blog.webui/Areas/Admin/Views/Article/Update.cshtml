@@ -31,11 +31,23 @@
 							<label asp-for="Content" class="form-label">İçerik</label>
 							<textarea style="height:220px;" asp-for="Content" class="form-control mb-3" id="defaultFormControlInput" placeholder="Lütfen içerik giriniz" aria-describedby="defaultFormControlHelp"></textarea>
 							<span asp-validation-for="Content" class="text-danger"> </span>
-							<div class="form-group">
-								<button class="btn btn-primary">Kaydet</button>
-							</div>
-
+						
 						</div>
+						<div class="row">
+							<div class="form-group col-md-6">
+								<label asp-for="Image.FileName" for="defaultFormControlInput" class="form-label d-block">Mevcut Resim</label>
+								<img style="height:25em; width:25em;" class="mb-3" src="~/images/@Model.Image.FileName" alt="@Model.Title" />
+							</div>
+							<div class="form-group col-md-6">
+								<label asp-for="Photo" for="defaultFormControlInput" class="form-label">Resim seçiniz</label>
+								<input asp-for="Photo" type="file" accept="image/*" class="form-control mb-3" id="defaultFormControlInput" aria-describedby="defaultFormControlHelp">
+								<span asp-validation-for="Photo" class="text-danger"></span>
+							</div>
+						</div>
+						<div class="form-group">
+							<button class="btn btn-primary">Kaydet</button>
+						</div>
+
 					</div>
 
 				</form>

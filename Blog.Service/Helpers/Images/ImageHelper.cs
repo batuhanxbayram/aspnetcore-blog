@@ -17,8 +17,8 @@ namespace Blog.Service.Helpers.Images
 		private readonly IWebHostEnvironment _env;
 		private readonly string wwwroot;
 		private const string imgFolder = "images";
-		private const string articleImagesFolder = "images-article";
-		private const string userImagesFolder = "images-user";
+		private const string articleImagesFolder = "article-images";
+		private const string userImagesFolder = "user-images";
 
 
 		public ImageHelper(IWebHostEnvironment env)
@@ -85,14 +85,14 @@ namespace Blog.Service.Helpers.Images
 				Directory.CreateDirectory($"{wwwroot}/{imgFolder}/{folderName}");
 			}
 
-			string olfFileName = Path.GetFileNameWithoutExtension(name);
-			string fileExtension = Path.GetExtension(name);
+			var olfFileName = Path.GetFileNameWithoutExtension(imageFile.FileName);
+			var fileExtension = Path.GetExtension(imageFile.FileName);
 
 			name = ReplaceInvalidChars(name);
 
 			DateTime dateTime= DateTime.Now;
 			string newFileName = $"{name}_{dateTime.Millisecond}{fileExtension}";
-			string path = Path.Combine($"{wwwroot}/{imgFolder}/{folderName}", name);
+			string path = Path.Combine($"{wwwroot}/{imgFolder}/{folderName}/{newFileName}");
 
 			await using var stream = new FileStream(path, FileMode.Create, FileAccess.Write, FileShare.None,
 				1024 * 1024, useAsync: false);

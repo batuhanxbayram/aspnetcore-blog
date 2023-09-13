@@ -21,8 +21,20 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\images-article\\123",
-      "PackagePath": "staticwebassets\\images\\images-article"
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\article-images\\DependencyInjection_635.png",
+      "PackagePath": "staticwebassets\\images\\article-images\\DependencyInjection_635.png"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\article-images\\qqqq_438.png",
+      "PackagePath": "staticwebassets\\images\\article-images\\qqqq_438.png"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\article-images\\qqqq_905.png",
+      "PackagePath": "staticwebassets\\images\\article-images\\qqqq_905.png"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\qwet_489.png",
+      "PackagePath": "staticwebassets\\images\\qwet_489.png"
     },
     {
       "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\js\\JavaScript.js",
@@ -31,6 +43,18 @@
     {
       "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\js\\articleIndex.js",
       "PackagePath": "staticwebassets\\js\\articleIndex.js"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\js\\categoryAdd.js",
+      "PackagePath": "staticwebassets\\js\\categoryAdd.js"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\js\\categoryIndex.js",
+      "PackagePath": "staticwebassets\\js\\categoryIndex.js"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\js\\userIndex.js",
+      "PackagePath": "staticwebassets\\js\\userIndex.js"
     },
     {
       "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\lib\\bootstrap\\LICENSE",

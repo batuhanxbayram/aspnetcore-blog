@@ -10,6 +10,10 @@ namespace Blog.Service.Services.Abstract
 {
 	public interface ICategoryService
 	{
-		Task<IList<CategoryDTO>> GetAllCategoriesNonDeleted();
+		Task<List<CategoryDTO>> GetAllCategoriesNonDeleted();
+		Task<string> CreateCategoryAsync(CategoryAddDTO categoryAddDto);
+		Task<Category> GetByGuidId(Guid id);
+		Task<string> UpdateCategoryAsync(CategoryUpdateDTO categoryUpdateDto);
+		Task SafeDeleteCategory(Guid id);
 	}
 }

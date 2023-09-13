@@ -34,7 +34,7 @@ namespace Blog.Service.Services.Concrete
 
 		public async Task<ArticleDTO> GetArticleWithCategoryNonDeletedAsync(Guid id)
 		{
-			var article = await _unitOfWork.GetRepository<Article>().GetAsync(x => !x.IsDeleted && x.Id == id, c => c.Category);
+			var article = await _unitOfWork.GetRepository<Article>().GetAsync(x => !x.IsDeleted && x.Id == id, c => c.Category ,c=> c.Image);
 			var dto = _mapper.Map<ArticleDTO>(article);
 			return dto;
 		}
@@ -45,7 +45,8 @@ namespace Blog.Service.Services.Concrete
 
 			var imageupload = await _imageHelper.Upload(articleAddDto.Title, articleAddDto.Photo, ImageType.Post);
 
-			Image image = new(imageupload.FullName,articleAddDto.Photo.ContentType,email);
+			//Image image = new Image();
+			Image image = new Image(imageupload.FullName,articleAddDto.Photo.ContentType,email);
 			await _unitOfWork.GetRepository<Image>().AddAsync(image);
 
 			var article = new Article()
@@ -56,7 +57,6 @@ namespace Blog.Service.Services.Concrete
 				UserId = user,
 				CreatedBy = email,
 				ImageId = image.Id,
-				
 			};
 			await _unitOfWork.GetRepository<Article>().AddAsync(article);
 			await _unitOfWork.SaveAsync();
@@ -67,7 +67,19 @@ namespace Blog.Service.Services.Concrete
 
 			var email = _httpContextAccessor.HttpContext.User.GetLoggedInEmail();
 			var article = await _unitOfWork.GetRepository<Article>()
-				.GetAsync(x => !x.IsDeleted && x.Id == articleUpdateDto.Id, c => c.Category);
+				.GetAsync(x => !x.IsDeleted && x.Id == articleUpdateDto.Id, c => c.Category,i=>i.Image);
+
+			if (articleUpdateDto.Photo != null)
+			{
+				_imageHelper.Delete(articleUpdateDto.Photo.FileName);
+				var imageUpload =
+					await _imageHelper.Upload(articleUpdateDto.Title, articleUpdateDto.Photo, ImageType.Post);
+				Image image = new Image(imageUpload.FullName, articleUpdateDto.Photo.ContentType, email);
+				await _unitOfWork.GetRepository<Image>().AddAsync(image);
+				article.ImageId=image.Id;
+
+
+			}
 			article.Content = articleUpdateDto.Content;
 			article.Title = articleUpdateDto.Title;
 			article.CategoryId = articleUpdateDto.CategoryId;

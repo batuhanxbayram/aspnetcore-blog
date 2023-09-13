@@ -1,0 +1,69 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model List<Blog.Entity.DTOs.Categories.CategoryDTO>
+
+
+<div class="container-xxl flex-grow-1 container-p-y">
+
+
+	<h4 class="fw-bold py-3 mb-4">
+		<span class="text-muted fw-light">Kategori/</span> Kategoriler
+	</h4>
+
+	<!-- Basic Bootstrap Table -->
+	<div class="card">
+
+		<div class="table-responsive text-nowrap m-3">
+			<a class="btn btn-success mb-3" asp-area="Admin" asp-controller="Category" asp-action="Add">Kategori Ekle </a>
+			<table class="table table-bordered m-3" id="categoriesTable" width="%100" cellspacing="0">
+				<thead>
+				<tr>
+					<th>İsim</th>
+					<th>Oluşturulma Tarihi</th>
+					<th>Oluşturan</th>
+					<th>Durum</th>
+					<th>İşlemler</th>
+				</tr>
+				</thead>
+				<tfoot>
+				<tr>
+					<th>İsim</th>
+					<th>Oluşturulma Tarihi</th>
+					<th>Oluşturan</th>
+					<th>Durum</th>
+					<th>İşlemler</th>
+				</tr>
+				</tfoot>
+				<tbody class="table-border-bottom-0">
+				@foreach (var category in Model)
+				{
+					<tr name="@category.Id">
+						<td>@category.Name</td>
+						<td>@category.CreatedDate.ToShortDateString()</td>
+						<td>@category.CreatedBy</td>
+						<td>@(category.IsDeleted ? "Aktif Değil" : "Aktif")</td>
+						<td>
+							<a class="btn btn-primary btn-sm" asp-area="Admin" asp-controller="Category" asp-action="Update" data-id="@category.Id" asp-route-categoryId="@category.Id">
+								<i class="bx bxs-edit"></i>
+							</a>
+							<a class="btn btn-danger btn-sm" asp-area="Admin" asp-controller="Category" asp-action="Delete" data-id="@category.Id" asp-route-categoryId="@category.Id">
+								<i class='bx bx-message-alt-x'></i>
+							</a>
+						</td> 
+					</tr>
+				}
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<!--/ Basic Bootstrap Table -->
+
+</div>
+
+@section Scripts {
+	<script src="~/js/categoryIndex.js" type="application/ecmascript"></script>
+}
+
