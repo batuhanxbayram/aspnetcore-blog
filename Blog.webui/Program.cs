@@ -2,6 +2,7 @@ using System.Security.Cryptography.X509Certificates;
 using Blog.Data.Context;
 using Blog.Data.Extensions;
 using Blog.Entity.Entities;
+using Blog.Service.Describer;
 using Blog.Service.Extension;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Razor;
@@ -38,6 +39,7 @@ builder.Services.AddIdentity<AppUser, AppRole>(opt =>
 		opt.Password.RequireUppercase = false;
 	})
 	.AddRoleManager<RoleManager<AppRole>>()
+	.AddErrorDescriber<CustomIdentityErrorDescriber>()
 	.AddEntityFrameworkStores<AppDbContext>()
 	.AddDefaultTokenProviders();
 

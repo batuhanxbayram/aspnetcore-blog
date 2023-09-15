@@ -1,0 +1,59 @@
+﻿@model UserUpdateDTO
+
+
+
+
+<div class="container-xxl flex-grow-1 container-p-y">
+	<h4 class="fw-bold py-3 mb-4">
+		<span class="text-muted fw-light">Kullancılar /</span> Kullanıcı Ekle
+	</h4>
+
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card mb-4">
+				<h5 class="card-header">Kullanıcı Ekle</h5>
+				<form asp-controller="User" asp-area="Admin" asp-action="Update" method="post" enctype="multipart/form-data">
+					<div class="card-body">
+						<input asp-for="Id" type="hidden"/>
+						<div asp-validation-summary="All"></div>
+
+						<div class="form-group">
+							<label asp-for="FirstName" for="defaultFormControlInput" class="form-label">Kullanıcı Adı</label>
+							<input asp-for="FirstName" type="text" class="form-control mb-3" id="defaultFormControlInput" aria-describedby="defaultFormControlHelp">
+							<span asp-validation-for="FirstName" class="text-danger"></span>
+						</div>
+						<div class="form-group">
+							<label asp-for="LastName" for="defaultFormControlInput" class="form-label">Kullanıcı Soyadı</label>
+							<input asp-for="LastName" type="text" class="form-control mb-3" id="defaultFormControlInput" aria-describedby="defaultFormControlHelp">
+							<span asp-validation-for="LastName" class="text-danger"></span>
+						</div>
+						<div class="form-group">
+							<label asp-for="Email" for="defaultFormControlInput" class="form-label">Email</label>
+							<input asp-for="Email" type="email" class="form-control mb-3" id="defaultFormControlInput" aria-describedby="defaultFormControlHelp">
+							<span asp-validation-for="Email" class="text-danger"></span>
+						</div>
+						<div class="form-group">
+							<label asp-for="PhoneNumber" for="defaultFormControlInput" class="form-label">Telefon Numarası</label>
+							<input asp-for="PhoneNumber" type="text" class="form-control mb-3" id="defaultFormControlInput" aria-describedby="defaultFormControlHelp">
+							<span asp-validation-for="PhoneNumber" class="text-danger"></span>
+						</div>
+						@* <div class="form-group">
+							<label asp-for="Password" for="defaultFormControlInput" class="form-label">Kullanıcı Parolası</label>
+							<input asp-for="Password" type="password" class="form-control mb-3" id="defaultFormControlInput" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;" aria-describedby="defaultFormControlHelp">
+							<span asp-validation-for="Password" class="text-danger"></span>
+						</div> *@
+						<div class="form-group">
+							<label asp-for="RoleId"  for="defaultFormControlInput" class="form-label">Kullanıcı Rolü</label>
+							<select asp-for="RoleId" class="form-control mb-3" asp-items="@(new SelectList(@Model.Roles,"Id","Name"))"></select>
+							<span asp-validation-for="RoleId" class="text-danger"></span>
+						</div>
+
+						<div class="form-group">
+							<button class="btn btn-primary mt-4">Kaydet</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

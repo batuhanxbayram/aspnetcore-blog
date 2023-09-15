@@ -6,7 +6,14 @@ namespace Blog.Webui.ResultMessages
 	{
 		public static class Article
 		{
-
+			public static string Add(string articleName)
+			{
+				return $"{articleName} isimli makale başarıyla eklenmiştir";
+			}
+			public static string Update(string articleName)
+			{
+				return $"{articleName} isimli makale başarıyla güncellenmiştir";
+			}
 
 		}
 
@@ -28,11 +35,15 @@ namespace Blog.Webui.ResultMessages
 
 			public static string Add(string user)
 			{
-				return $"{user} isimli kullanıcı başarıyla güncellenmiştir";
+				return $"{user} isimli kullanıcı başarıyla eklenmiştir";
 			}
 			public static string Update(string user)
 			{
 				return $"{user} isimli kullanıcı başarıyla güncellenmiştir";
+			}
+			public static string Delete(string user)
+			{
+				return $"{user} isimli kullanıcı başarıyla silinmiştir";
 			}
 		}
 	}

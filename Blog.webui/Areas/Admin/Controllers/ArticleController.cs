@@ -8,6 +8,7 @@ using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 using NToastNotify;
+using Blog.Webui.ResultMessages;
 
 namespace Blog.Webui.Areas.Admin.Controllers
 {
@@ -103,6 +104,18 @@ namespace Blog.Webui.Areas.Admin.Controllers
 		{
 
 			await _articleService.SafeDeleteArticleAsync(articleId);
+			return RedirectToAction("Index", "Article", new { Area = "Admin" });
+		}
+
+		public async Task<IActionResult> DeletedArticle()
+		{
+			var articles = await _articleService.GetAllArticleWithCategoryDeletedAsync();
+			return View(articles);
+
+		}
+		public async Task<IActionResult> UndoDelete(Guid articleId)
+		{
+			await _articleService.UndoDeleteArticleAsync(articleId);
 			return RedirectToAction("Index", "Article", new { Area = "Admin" });
 		}
 

@@ -406,3 +406,7 @@ C:\Users\Monster\source\repos\Blog\Blog.webui\obj\Debug\net6.0\refint\Blog.Webui
 C:\Users\Monster\source\repos\Blog\Blog.webui\obj\Debug\net6.0\Blog.Webui.pdb
 C:\Users\Monster\source\repos\Blog\Blog.webui\obj\Debug\net6.0\Blog.Webui.genruntimeconfig.cache
 C:\Users\Monster\source\repos\Blog\Blog.webui\obj\Debug\net6.0\ref\Blog.Webui.dll
+C:\Users\Monster\source\repos\Blog\Blog.webui\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Monster\source\repos\Blog\Blog.webui\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Monster\source\repos\Blog\Blog.webui\bin\Debug\net6.0\refs\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Monster\source\repos\Blog\Blog.webui\bin\Debug\net6.0\refs\Microsoft.Extensions.Identity.Stores.dll

@@ -29,6 +29,13 @@ namespace Blog.Service.Services.Concrete
 			return dto;
 		}
 
+		public async Task<List<CategoryDTO>> GetAllCategoriesDeleted()
+		{
+			var categories = await _unitOfWork.GetRepository<Category>().GetAllAsync(x => x.IsDeleted);
+			var dto = _mapper.Map<List<CategoryDTO>>(categories);
+			return dto;
+		}
+
 		public async Task<string> CreateCategoryAsync(CategoryAddDTO categoryAddDto)
 		{
 			var email =  _httpContextAccessor.HttpContext.User.GetLoggedInEmail();
@@ -70,6 +77,19 @@ namespace Blog.Service.Services.Concrete
 			category.IsDeleted = true;
 			category.DeletedBy = email;
 			category.DeletedDate=DateTime.Now;
+
+			await _unitOfWork.GetRepository<Category>().UpdateAsync(category);
+			await _unitOfWork.SaveAsync();
+
+		}
+
+		public async Task UndoDeleteCategory(Guid id)
+		{
+			var category = await _unitOfWork.GetRepository<Category>().GetByGuidAsync(id);
+
+			category.IsDeleted = false;
+			category.DeletedBy = null;
+			category.DeletedDate = null;
 
 			await _unitOfWork.GetRepository<Category>().UpdateAsync(category);
 			await _unitOfWork.SaveAsync();

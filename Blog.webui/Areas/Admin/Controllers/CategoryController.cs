@@ -89,6 +89,15 @@ namespace Blog.Webui.Areas.Admin.Controllers
 			return View(map);
 		}
 
+		[HttpGet]
+		public async Task<IActionResult> DeletedCategory()
+		{
+			var categories = await _categoryService.GetAllCategoriesDeleted();
+			var map = _mapper.Map<List<CategoryDTO>>(categories);
+			return View(map);
+		}
+
+
 		[HttpPost]
 		public async Task<IActionResult> Update(CategoryUpdateDTO updateDto)
 		{
@@ -114,6 +123,12 @@ namespace Blog.Webui.Areas.Admin.Controllers
 			await _categoryService.SafeDeleteCategory(categoryId);
 			return RedirectToAction("Index", "Category", new { Area = "Admin" });
 
+		}
+
+		public async Task<IActionResult> UndoDelete(Guid categoryId)
+		{
+			await _categoryService.UndoDeleteCategory(categoryId);
+			return RedirectToAction("Index", "Category", new { Area = "Admin" });
 		}
 	}
 }
