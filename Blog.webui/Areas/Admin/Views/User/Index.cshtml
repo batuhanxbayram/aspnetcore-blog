@@ -25,7 +25,10 @@
 						<th>Rolü</th>
 						<th>Email Onay</th>
 						<th>Başarısız Giriş Sayısı</th>
-						<th>İşlemler</th>
+						@if (!User.IsInRole("User"))
+						{
+							<th>İşlemler</th>
+						}
 					</tr>
 				</thead>
 				<tfoot>
@@ -37,7 +40,10 @@
 						<th>Rolü</th>
 						<th>Email Onay</th>
 						<th>Başarısız Giriş Sayısı</th>
-						<th>İşlemler</th>
+						@if (!User.IsInRole("User"))
+						{
+							<th>İşlemler</th>
+						}
 					</tr>
 				</tfoot>
 				<tbody class="table-border-bottom-0">
@@ -51,14 +57,18 @@
 							<td>@item.Role</td>
 							<td>@(item.EmailConfirmed ? "Onaylı" : "Onaylı Değil")</td>
 							<td>@item.AccessFailedCount</td>
-							<td>
-								<a class="btn btn-primary btn-sm" asp-area="Admin" asp-controller="User" asp-action="Update" data-id="@item.Id" asp-route-userId="@item.Id">
-									<i class="bx bxs-edit"></i>
-								</a>
-								<a class="btn btn-danger btn-sm" asp-area="Admin" asp-controller="User" asp-action="Delete" data-id="@item.Id" asp-route-userId="@item.Id">
-									<i class='bx bx-message-alt-x'></i>
-								</a>
-							</td>
+							@if (!User.IsInRole("User"))
+							{
+								<td>
+									<a class="btn btn-primary btn-sm" asp-area="Admin" asp-controller="User" asp-action="Update" data-id="@item.Id" asp-route-userId="@item.Id">
+										<i class="bx bxs-edit"></i>
+									</a>
+									<a class="btn btn-danger btn-sm" asp-area="Admin" asp-controller="User" asp-action="Delete" data-id="@item.Id" asp-route-userId="@item.Id">
+										<i class='bx bx-message-alt-x'></i>
+									</a>
+								</td>
+							}
+							
 						</tr>
 					}
 				</tbody>

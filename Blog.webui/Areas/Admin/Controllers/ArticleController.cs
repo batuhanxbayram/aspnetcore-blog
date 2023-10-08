@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 using NToastNotify;
 using Blog.Webui.ResultMessages;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Blog.Webui.Areas.Admin.Controllers
 {
@@ -29,6 +30,7 @@ namespace Blog.Webui.Areas.Admin.Controllers
 			_validator = validator;
 			_toastNotification = toastNotification;
 		}
+		[Authorize(Roles = "Superadmin,Admin,User")]
 		public async Task<IActionResult> Index()
 		{
 			var articles = await _articleService.GetAllArticleWithCategoryNonDeletedAsync();
@@ -36,6 +38,7 @@ namespace Blog.Webui.Areas.Admin.Controllers
 			return View(articles);
 		}
 		[HttpGet]
+		[Authorize(Roles = "Superadmin,Admin")]
 		public async Task<IActionResult> Add()
 		{
 			var categories = await _categoryService.GetAllCategoriesNonDeleted();
@@ -44,6 +47,7 @@ namespace Blog.Webui.Areas.Admin.Controllers
 		}
 
 		[HttpPost]
+		[Authorize(Roles = "Superadmin,Admin")]
 		public async Task<IActionResult> Add(ArticleAddDTO articleAddDto)
 		{
 			var map = _mapper.Map<Article>(articleAddDto);
@@ -65,6 +69,7 @@ namespace Blog.Webui.Areas.Admin.Controllers
 		}
 
 		[HttpGet]
+		[Authorize(Roles = "Superadmin,Admin")]
 		public async Task<IActionResult> Update(Guid articleId)
 		{
 			var article = await _articleService.GetArticleWithCategoryNonDeletedAsync(articleId);
@@ -76,6 +81,7 @@ namespace Blog.Webui.Areas.Admin.Controllers
 		}
 
 		[HttpPost]
+		[Authorize(Roles = "Superadmin,Admin")]
 		public async Task<IActionResult> Update(ArticleUpdateDTO articleUpdateDto)
 		{
 			var map =_mapper.Map<Article>(articleUpdateDto);
@@ -100,19 +106,21 @@ namespace Blog.Webui.Areas.Admin.Controllers
 		}
 
 		[HttpGet]
+		[Authorize(Roles = "Superadmin,Admin")]
 		public async Task<IActionResult> Delete(Guid articleId)
 		{
 
 			await _articleService.SafeDeleteArticleAsync(articleId);
 			return RedirectToAction("Index", "Article", new { Area = "Admin" });
 		}
-
+		[Authorize(Roles = "Superadmin,Admin")]
 		public async Task<IActionResult> DeletedArticle()
 		{
 			var articles = await _articleService.GetAllArticleWithCategoryDeletedAsync();
 			return View(articles);
 
 		}
+		[Authorize(Roles = "Superadmin,Admin")]
 		public async Task<IActionResult> UndoDelete(Guid articleId)
 		{
 			await _articleService.UndoDeleteArticleAsync(articleId);

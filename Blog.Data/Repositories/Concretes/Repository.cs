@@ -14,7 +14,7 @@ public class Repository<T> : IRepository<T> where T : class, IEntityBase, new()
 	{
 		this.dbContext = dbContext;
 	}
-	private DbSet<T> Table { get => dbContext.Set<T>(); }
+	private DbSet<T> Table => dbContext.Set<T>();
 
 	public async Task<List<T>> GetAllAsync(Expression<Func<T,bool>> predicate = null, params Expression<Func<T, object>>[] includeProperties)
 	{

@@ -22,6 +22,7 @@ namespace Blog.webui.Controllers
 		{
 
 			var item = await _articleService.GetAllArticleWithCategoryNonDeletedAsync();
+
 			return View(item);
 		}
 

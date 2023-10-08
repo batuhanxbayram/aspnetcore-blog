@@ -64,5 +64,11 @@ namespace Blog.Webui.Areas.Admin.Controllers
 
         }
 
+        [Authorize]
+        [HttpGet]
+        public async Task<IActionResult> AccessDenied()
+        {
+	        return View();
+        }
     }
 }

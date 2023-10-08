@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "iuMxt74SLE+zy22CVuVYHFH0meSp8zeF9zx7PMjCuO8=",
+  "Hash": "6hEnoBPZZx+7yaitwNFxGjNBbdTBML/udiqeFLamreY=",
   "Source": "Blog.Webui",
   "BasePath": "_content/Blog.Webui",
   "Mode": "Default",
@@ -219,6 +219,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\article-images\\selam_892.png"
+    },
+    {
+      "Identity": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\article-images\\weneedtolearn_375.png",
+      "SourceId": "Blog.Webui",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\",
+      "BasePath": "_content/Blog.Webui",
+      "RelativePath": "images/article-images/weneedtolearn_375.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\article-images\\weneedtolearn_375.png"
     },
     {
       "Identity": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\qwet_489.png",

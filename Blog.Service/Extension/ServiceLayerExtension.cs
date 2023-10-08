@@ -27,6 +27,8 @@ namespace Blog.Service.Extension
 					opt.DisableDataAnnotationsValidation = true;
 					opt.ValidatorOptions.LanguageManager.Culture = new CultureInfo("tr");
 				});
+			services.AddScoped<IUserService, UserService>();
+			services.AddScoped<IDashBoardService, DashBoardService>();
 			
 
 			services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();

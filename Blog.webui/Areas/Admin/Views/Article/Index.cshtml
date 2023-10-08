@@ -8,41 +8,55 @@
 		<span class="text-muted fw-light">Tables /</span> Makaleler
 	</h4>
 
+
 	<!-- Basic Bootstrap Table -->
 	<div class="card">
 
 		<div class="table-responsive text-nowrap m-3">
-			<a class="btn btn-success mb-3" asp-area="Admin" asp-controller="Article" asp-action="Add">Makale Ekle </a>
+			@if (!User.IsInRole("User"))
+			{
+				<a class="btn btn-success mb-3" asp-area="Admin" asp-controller="Article" asp-action="Add">Makale Ekle </a>
+			}
 			<table class="table table-bordered m-3" id="articlesTable" width="%100" cellspacing="0">
 				<thead>
-					<tr>
-						<th>Başlık</th>
-						<th>Kategori</th>
-						<th>Oluşturulma Tarihi</th>
-						<th>Oluşturan</th>
-						<th>Durum</th>
-						<th>İşlemler</th>
-					</tr>
+				<tr>
+					<th>Başlık</th>
+					<th>Kategori</th>
+					<th>Oluşturulma Tarihi</th>
+					<th>Oluşturan</th>
+					<th>Durum</th>
+					@if (!User.IsInRole("User"))
+					{
+							<th>İşlemler</th>
+					}
+					
+				</tr>
 				</thead>
 				<tfoot>
-					<tr>
-						<th>Başlık</th>
-						<th>Kategori</th>
-						<th>Oluşturulma Tarihi</th>
-						<th>Oluşturan</th>
-						<th>Durum</th>
+				<tr>
+					<th>Başlık</th>
+					<th>Kategori</th>
+					<th>Oluşturulma Tarihi</th>
+					<th>Oluşturan</th>
+					<th>Durum</th>
+					@if (!User.IsInRole("User"))
+					{
 						<th>İşlemler</th>
-					</tr>
+					}
+				</tr>
 				</tfoot>
 				<tbody class="table-border-bottom-0">
-					@foreach (var item in Model)
-					{
-						<tr name="@item.Id">
-							<td>@item.Title</td>
-							<td>@item.Category.Name</td>
-							<td>@item.CreatedDate.ToShortDateString()</td>
-							<td>@item.CreatedBy</td>
-							<td>@(item.IsDeleted ? "Aktif Değil" : "Aktif")</td>
+				@foreach (var item in Model)
+				{
+					<tr name="@item.Id">
+						<td>@item.Title</td>
+						<td>@item.Category.Name</td>
+						<td>@item.CreatedDate.ToShortDateString()</td>
+						<td>@item.CreatedBy</td>
+						<td>@(item.IsDeleted ? "Aktif Değil" : "Aktif")</td>
+						
+						@if (!User.IsInRole("User"))
+						{
 							<td>
 								<a class="btn btn-primary btn-sm" asp-area="Admin" asp-controller="Article" asp-action="Update" data-id="@item.Id" asp-route-articleId="@item.Id">
 									<i class="bx bxs-edit"></i>
@@ -50,9 +64,10 @@
 								<a class="btn btn-danger btn-sm" asp-area="Admin" asp-controller="Article" asp-action="Delete" data-id="@item.Id" asp-route-articleId="@item.Id">
 									<i class='bx bx-message-alt-x'></i>
 								</a>
-							</td> 
-						</tr>
-					}
+							</td>
+						}
+					</tr>
+				}
 				</tbody>
 			</table>
 		</div>
