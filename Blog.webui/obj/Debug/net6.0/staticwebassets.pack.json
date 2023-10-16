@@ -21,8 +21,16 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\article-images\\123123_766.png",
+      "PackagePath": "staticwebassets\\images\\article-images\\123123_766.png"
+    },
+    {
       "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\article-images\\DependencyInjection_635.png",
       "PackagePath": "staticwebassets\\images\\article-images\\DependencyInjection_635.png"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\article-images\\ckale_993.png",
+      "PackagePath": "staticwebassets\\images\\article-images\\ckale_993.png"
     },
     {
       "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\article-images\\qqqq_438.png",
@@ -59,6 +67,10 @@
     {
       "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\js\\categoryIndex.js",
       "PackagePath": "staticwebassets\\js\\categoryIndex.js"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\js\\dashboardIndex.js",
+      "PackagePath": "staticwebassets\\js\\dashboardIndex.js"
     },
     {
       "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\js\\userIndex.js",
@@ -1255,6 +1267,202 @@
     {
       "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\sneat\\yarn.lock",
       "PackagePath": "staticwebassets\\sneat\\yarn.lock"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\css\\flex-slider.css",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\css\\flex-slider.css"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\css\\fontawesome.css",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\css\\fontawesome.css"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\css\\owl.css",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\css\\owl.css"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\css\\templatemo-stand-blog.css",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\css\\templatemo-stand-blog.css"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\fonts\\Flaticon.woff",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\fonts\\Flaticon.woff"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\fonts\\flexslider-icon.eot",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\fonts\\flexslider-icon.eot"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\fonts\\flexslider-icon.svg",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\fonts\\flexslider-icon.svg"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\fonts\\flexslider-icon.ttf",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\fonts\\flexslider-icon.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\fonts\\flexslider-icon.woff",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\fonts\\flexslider-icon.woff"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\fonts\\slick.eot",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\fonts\\slick.eot"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\fonts\\slick.svg",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\fonts\\slick.svg"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\fonts\\slick.ttf",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\fonts\\slick.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\fonts\\slick.woff",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\fonts\\slick.woff"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\images\\about-us.jpg",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\images\\about-us.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\images\\banner-item-01.jpg",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\images\\banner-item-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\images\\banner-item-02.jpg",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\images\\banner-item-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\images\\banner-item-03.jpg",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\images\\banner-item-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\images\\banner-item-04.jpg",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\images\\banner-item-04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\images\\banner-item-05.jpg",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\images\\banner-item-05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\images\\banner-item-06.jpg",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\images\\banner-item-06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\images\\blog-post-01.jpg",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\images\\blog-post-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\images\\blog-post-02.jpg",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\images\\blog-post-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\images\\blog-post-03.jpg",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\images\\blog-post-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\images\\blog-thumb-01.jpg",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\images\\blog-thumb-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\images\\blog-thumb-02.jpg",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\images\\blog-thumb-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\images\\blog-thumb-03.jpg",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\images\\blog-thumb-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\images\\blog-thumb-04.jpg",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\images\\blog-thumb-04.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\images\\blog-thumb-05.jpg",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\images\\blog-thumb-05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\images\\blog-thumb-06.jpg",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\images\\blog-thumb-06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\images\\comment-author-01.jpg",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\images\\comment-author-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\images\\comment-author-02.jpg",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\images\\comment-author-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\images\\comment-author-03.jpg",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\images\\comment-author-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\images\\cta-bg.jpg",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\images\\cta-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\images\\heading-bg.jpg",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\images\\heading-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\js\\accordions.js",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\js\\accordions.js"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\js\\custom.js",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\js\\custom.js"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\js\\isotope.js",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\js\\isotope.js"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\js\\owl.js",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\js\\owl.js"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\assets\\js\\slick.js",
+      "PackagePath": "staticwebassets\\stand-blog\\assets\\js\\slick.js"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\prepros-6.config",
+      "PackagePath": "staticwebassets\\stand-blog\\prepros-6.config"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\vendor\\bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\stand-blog\\vendor\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\stand-blog\\vendor\\bootstrap\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\stand-blog\\vendor\\jquery\\jquery.min.js",
+      "PackagePath": "staticwebassets\\stand-blog\\vendor\\jquery\\jquery.min.js"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Blog.Webui.Microsoft.AspNetCore.StaticWebAssets.props",

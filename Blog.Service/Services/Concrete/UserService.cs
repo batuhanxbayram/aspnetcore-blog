@@ -82,9 +82,5 @@ namespace Blog.Service.Services.Concrete
 			return (result,user.Email);
 		}
 
-		public async Task<UserProfileDTO> GetUserProfileAsync()
-		{
-			
-		}
 	}
 }

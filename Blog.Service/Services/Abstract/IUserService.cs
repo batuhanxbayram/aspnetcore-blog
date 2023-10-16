@@ -19,7 +19,7 @@ namespace Blog.Service.Services.Abstract
 		Task<AppUser> GetUserByIdAsync(Guid userId);
 		Task<string> GetUserRoleAsync(AppUser user);
 		Task<(IdentityResult identityResult,string email)> DeleteUserAsync(Guid userId);
-		Task<UserProfileDTO> GetUserProfileAsync();
+		//Task<UserProfileDTO> GetUserProfileAsync();
 
 
 

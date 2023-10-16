@@ -8,5 +8,8 @@ namespace Blog.Service.Services.Abstract
 {
 	public interface IDashBoardService
 	{
+		Task<List<int>> GetYearlyArticleAsync();
+		Task<int> GetTotalArticleCountAsync();
+		Task<int> GetTotalCategoryCountAsync();
 	}
 }
