@@ -10,13 +10,17 @@ namespace Blog.Service.Services.Abstract
 {
 	public interface IArticleService
 	{
-		  Task<List<ArticleDTO>> GetAllArticleWithCategoryNonDeletedAsync();
-		  Task<List<ArticleDTO>> GetAllArticleWithCategoryDeletedAsync();
+		Task<List<ArticleDTO>> GetAllArticleWithCategoryNonDeletedAsync();
+		Task<List<ArticleDTO>> GetAllArticleWithCategoryDeletedAsync();
 
-		  Task CreateArticleAsync(ArticleAddDTO articleAddDto);
-		  Task<ArticleDTO> GetArticleWithCategoryNonDeletedAsync(Guid id);
-		  Task UpdateArticleAsync(ArticleUpdateDTO articleUpdateDto);
-		  Task SafeDeleteArticleAsync(Guid articleId);
-		  Task UndoDeleteArticleAsync(Guid articleId);
+		Task CreateArticleAsync(ArticleAddDTO articleAddDto);
+		Task<ArticleDTO> GetArticleWithCategoryNonDeletedAsync(Guid id);
+		Task UpdateArticleAsync(ArticleUpdateDTO articleUpdateDto);
+		Task SafeDeleteArticleAsync(Guid articleId);
+		Task UndoDeleteArticleAsync(Guid articleId);
+		Task<ArticleListDTO> GetAllByPagesAsync(Guid? CategoryId, int currentPage = 1, int pageSize = 3, bool isAscending = false);
+		Task<ArticleListDTO> SearchAsync(string keyword, int currentPage = 1, int pageSize = 3, bool isAscending = false);
+
+
 	}
 }

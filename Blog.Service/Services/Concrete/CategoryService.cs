@@ -95,5 +95,12 @@ namespace Blog.Service.Services.Concrete
 			await _unitOfWork.SaveAsync();
 
 		}
-	}
+
+        public async Task<List<CategoryDTO>> GetAllCategoriesNonDeletedTake24()
+        {
+            var categories = await _unitOfWork.GetRepository<Category>().GetAllAsync(a => !a.IsDeleted);
+            var dto = _mapper.Map<List<CategoryDTO>>(categories);
+            return dto.Take(24).ToList();
+        }
+    }
 }

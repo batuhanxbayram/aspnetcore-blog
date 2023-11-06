@@ -12,7 +12,8 @@ namespace Blog.Service.Extension
 {
     public static class ServiceLayerExtension
     {
-        public static IServiceCollection LoadServiceLayerExtension(this IServiceCollection services)
+		[Obsolete]
+		public static IServiceCollection LoadServiceLayerExtension(this IServiceCollection services)
             
         {
 	        services.AddScoped<IArticleService, ArticleService>();

@@ -5,14 +5,8 @@ using Blog.Entity.Entities;
 using Blog.Webui.ResultMessages;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using NToastNotify;
-using System.Data;
 using Blog.Service.Services.Abstract;
-using Blog.Service.Services.Concrete;
-using System.ComponentModel.DataAnnotations;
-using FluentValidation;
-using static Blog.Webui.ResultMessages.Messages;
 
 namespace Blog.Webui.Areas.Admin.Controllers
 {
@@ -27,12 +21,12 @@ namespace Blog.Webui.Areas.Admin.Controllers
 		private readonly IUnitOfWork _unitOfWork;
 		private readonly SignInManager<AppUser> _signInManager;
 		private readonly IUserService _userService;
-		private readonly IValidator _validator;
+		
 
 
 		public UserController(IMapper mapper, IHttpContextAccessor httpContextAccessor,
 			RoleManager<AppRole> roleManager, UserManager<AppUser> userManager,
-			IToastNotification toastNotification, IUnitOfWork unitOfWork, SignInManager<AppUser> signInManager, IUserService userService, IValidator<AppUser> validator)
+			IToastNotification toastNotification, IUnitOfWork unitOfWork, SignInManager<AppUser> signInManager, IUserService userService)
 		{
 			_mapper = mapper;
 			_httpContextAccessor = httpContextAccessor;
@@ -42,7 +36,7 @@ namespace Blog.Webui.Areas.Admin.Controllers
 			_unitOfWork = unitOfWork;
 			_signInManager = signInManager;
 			_userService = userService;
-			_validator = validator;
+			
 		}
 
 		public async Task<IActionResult> Index()

@@ -15,10 +15,11 @@ namespace Blog.Entity.DTOs.Articles
 		public string Content { get; set; }
 		public CategoryDTO Category { get; set; }
 		public Image Image { get; set; }
-
+		public AppUser User { get; set; }
 		public string CreatedBy { get; set; }
 		public DateTime CreatedDate { get; set; }
 		public bool IsDeleted { get; set; }
+        public int ViewCount { get; set; }
 
-	}
+    }
 }
