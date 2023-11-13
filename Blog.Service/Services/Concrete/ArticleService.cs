@@ -168,5 +168,14 @@ namespace Blog.Service.Services.Concrete
 				IsAscending = isAscending
 			};
 		}
-	}
+		//Bütün makaleler geliyor ardından 3 tane alıyorum direkt databaseden en çok okunan 3 makaleyi getiren
+		// optimizasyonu yap 
+        public async Task<List<ArticleDTO>> GetMostReadArticles()
+        {
+            var article = await _unitOfWork.GetRepository<Article>().GetAllAsync(x=> !x.IsDeleted);
+			var top3articles = article.OrderByDescending(x=> x.ViewCount).Take(3).ToList();
+			var dto = _mapper.Map<List<ArticleDTO>>(top3articles);
+			return dto;
+        }
+    }
 }

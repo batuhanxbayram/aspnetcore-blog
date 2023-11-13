@@ -2,6 +2,9 @@
 ﻿
 @model ArticleListDTO
 
+
+
+
 <section class="blog-posts">
     <div class="container">
         <div class="row">
@@ -9,6 +12,10 @@
                 <div class="all-blog-posts">
                     <div class="row">
                         <div class="col-lg-12">
+                            @if (@Model.Articles.Count == 0)
+                            {
+                                <h3> Aradığınız İçerik Bulunamamıştır</h3>
+                            }
                             @foreach (var item in Model.Articles)
                             {
                                 <input type="hidden" id="keyword" value="@Model.CurrentPage" />
@@ -17,6 +24,7 @@
                                         <img src="~/stand-blog/assets/images/blog-post-01.jpg" alt="">
                                     </div>
                                     <div class="down-content">
+                                       
                                         <a asp-controller="Home" asp-action="Detail" asp-route-id="@item.Id"><h4>@item.Title</h4></a>
                                         <ul class="post-info">
                                             <li>@item.User.FirstName @item.User.LastName</li>

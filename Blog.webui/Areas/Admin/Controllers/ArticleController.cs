@@ -24,8 +24,8 @@ namespace Blog.Webui.Areas.Admin.Controllers
 
 		public ArticleController(IArticleService articleService, ICategoryService categoryService, IMapper mapper,IValidator<Article> validator,IToastNotification toastNotification)
 		{
-			_articleService = articleService;
-			_categoryService = categoryService;
+            _articleService = articleService;
+            _categoryService = categoryService;
 			_mapper = mapper;
 			_validator = validator;
 			_toastNotification = toastNotification;

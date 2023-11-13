@@ -18,6 +18,7 @@ namespace Blog.Service.Services.Abstract
 		Task UpdateArticleAsync(ArticleUpdateDTO articleUpdateDto);
 		Task SafeDeleteArticleAsync(Guid articleId);
 		Task UndoDeleteArticleAsync(Guid articleId);
+		Task<List<ArticleDTO>> GetMostReadArticles();
 		Task<ArticleListDTO> GetAllByPagesAsync(Guid? CategoryId, int currentPage = 1, int pageSize = 3, bool isAscending = false);
 		Task<ArticleListDTO> SearchAsync(string keyword, int currentPage = 1, int pageSize = 3, bool isAscending = false);
 

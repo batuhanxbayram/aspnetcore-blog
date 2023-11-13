@@ -25,8 +25,16 @@
       "PackagePath": "staticwebassets\\images\\article-images\\123123_766.png"
     },
     {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\article-images\\123213213_466.png",
+      "PackagePath": "staticwebassets\\images\\article-images\\123213213_466.png"
+    },
+    {
       "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\article-images\\ASDDDD_794.png",
       "PackagePath": "staticwebassets\\images\\article-images\\ASDDDD_794.png"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\article-images\\ASPNETCorenedir_610.png",
+      "PackagePath": "staticwebassets\\images\\article-images\\ASPNETCorenedir_610.png"
     },
     {
       "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\article-images\\BUDA4_216.png",
@@ -41,8 +49,24 @@
       "PackagePath": "staticwebassets\\images\\article-images\\DependencyInjection_635.png"
     },
     {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\article-images\\ElasticSearchNedir_116.png",
+      "PackagePath": "staticwebassets\\images\\article-images\\ElasticSearchNedir_116.png"
+    },
+    {
       "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\article-images\\Lorem_866.png",
       "PackagePath": "staticwebassets\\images\\article-images\\Lorem_866.png"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\article-images\\Melihinseksiligi_387.png",
+      "PackagePath": "staticwebassets\\images\\article-images\\Melihinseksiligi_387.png"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\article-images\\RabitMQNedir_226.png",
+      "PackagePath": "staticwebassets\\images\\article-images\\RabitMQNedir_226.png"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\article-images\\RabitMq_545.png",
+      "PackagePath": "staticwebassets\\images\\article-images\\RabitMq_545.png"
     },
     {
       "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\article-images\\SARIGOT_349.png",
@@ -55,6 +79,10 @@
     {
       "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\article-images\\heee_994.png",
       "PackagePath": "staticwebassets\\images\\article-images\\heee_994.png"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\article-images\\helloword_691.png",
+      "PackagePath": "staticwebassets\\images\\article-images\\helloword_691.png"
     },
     {
       "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\article-images\\merhabadunya3_366.png",
@@ -75,6 +103,10 @@
     {
       "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\article-images\\selam_892.png",
       "PackagePath": "staticwebassets\\images\\article-images\\selam_892.png"
+    },
+    {
+      "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\article-images\\tesstTeeees_341.png",
+      "PackagePath": "staticwebassets\\images\\article-images\\tesstTeeees_341.png"
     },
     {
       "Id": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\article-images\\weneedtolearn_375.png",

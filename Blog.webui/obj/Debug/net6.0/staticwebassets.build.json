@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9ZFKtSy/DG944HqI0E46bYwcey+n+sLujAVke5fvu/k=",
+  "Hash": "ZOp8oPy4dqfI9LIzXzMJEHTWkcNsF3y1R026WTP4KlE=",
   "Source": "Blog.Webui",
   "BasePath": "_content/Blog.Webui",
   "Mode": "Default",
@@ -170,6 +170,23 @@
       "OriginalItemSpec": "wwwroot\\images\\article-images\\123123_766.png"
     },
     {
+      "Identity": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\article-images\\123213213_466.png",
+      "SourceId": "Blog.Webui",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\",
+      "BasePath": "_content/Blog.Webui",
+      "RelativePath": "images/article-images/123213213_466.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\article-images\\123213213_466.png"
+    },
+    {
       "Identity": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\article-images\\ASDDDD_794.png",
       "SourceId": "Blog.Webui",
       "SourceType": "Discovered",
@@ -185,6 +202,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\article-images\\ASDDDD_794.png"
+    },
+    {
+      "Identity": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\article-images\\ASPNETCorenedir_610.png",
+      "SourceId": "Blog.Webui",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\",
+      "BasePath": "_content/Blog.Webui",
+      "RelativePath": "images/article-images/ASPNETCorenedir_610.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\article-images\\ASPNETCorenedir_610.png"
     },
     {
       "Identity": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\article-images\\BUDA4_216.png",
@@ -255,6 +289,23 @@
       "OriginalItemSpec": "wwwroot\\images\\article-images\\DependencyInjection_635.png"
     },
     {
+      "Identity": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\article-images\\ElasticSearchNedir_116.png",
+      "SourceId": "Blog.Webui",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\",
+      "BasePath": "_content/Blog.Webui",
+      "RelativePath": "images/article-images/ElasticSearchNedir_116.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\article-images\\ElasticSearchNedir_116.png"
+    },
+    {
       "Identity": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\article-images\\heee_994.png",
       "SourceId": "Blog.Webui",
       "SourceType": "Discovered",
@@ -272,6 +323,23 @@
       "OriginalItemSpec": "wwwroot\\images\\article-images\\heee_994.png"
     },
     {
+      "Identity": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\article-images\\helloword_691.png",
+      "SourceId": "Blog.Webui",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\",
+      "BasePath": "_content/Blog.Webui",
+      "RelativePath": "images/article-images/helloword_691.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\article-images\\helloword_691.png"
+    },
+    {
       "Identity": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\article-images\\Lorem_866.png",
       "SourceId": "Blog.Webui",
       "SourceType": "Discovered",
@@ -287,6 +355,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\article-images\\Lorem_866.png"
+    },
+    {
+      "Identity": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\article-images\\Melihinseksiligi_387.png",
+      "SourceId": "Blog.Webui",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\",
+      "BasePath": "_content/Blog.Webui",
+      "RelativePath": "images/article-images/Melihinseksiligi_387.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\article-images\\Melihinseksiligi_387.png"
     },
     {
       "Identity": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\article-images\\merhabadunya3_366.png",
@@ -357,6 +442,40 @@
       "OriginalItemSpec": "wwwroot\\images\\article-images\\qweqwe_870.png"
     },
     {
+      "Identity": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\article-images\\RabitMq_545.png",
+      "SourceId": "Blog.Webui",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\",
+      "BasePath": "_content/Blog.Webui",
+      "RelativePath": "images/article-images/RabitMq_545.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\article-images\\RabitMq_545.png"
+    },
+    {
+      "Identity": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\article-images\\RabitMQNedir_226.png",
+      "SourceId": "Blog.Webui",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\",
+      "BasePath": "_content/Blog.Webui",
+      "RelativePath": "images/article-images/RabitMQNedir_226.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\article-images\\RabitMQNedir_226.png"
+    },
+    {
       "Identity": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\article-images\\SARIGOT_349.png",
       "SourceId": "Blog.Webui",
       "SourceType": "Discovered",
@@ -389,6 +508,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\article-images\\selam_892.png"
+    },
+    {
+      "Identity": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\article-images\\tesstTeeees_341.png",
+      "SourceId": "Blog.Webui",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\",
+      "BasePath": "_content/Blog.Webui",
+      "RelativePath": "images/article-images/tesstTeeees_341.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\article-images\\tesstTeeees_341.png"
     },
     {
       "Identity": "C:\\Users\\Monster\\source\\repos\\Blog\\Blog.webui\\wwwroot\\images\\article-images\\weneedtolearn_375.png",

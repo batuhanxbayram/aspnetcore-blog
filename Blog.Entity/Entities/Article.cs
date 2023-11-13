@@ -8,9 +8,9 @@ namespace Blog.Entity.Entities
 		{
 
 		}
-		public Article(string title, string content, Guid userId, string createdBy, Guid categoryId, Guid imageId)
+		public Article(string Title, string content, Guid userId, string createdBy, Guid categoryId, Guid imageId)
 		{
-			Title = title;
+			this.Title = Title;
 			Content = content;
 			UserId = userId;
 			CategoryId = categoryId;
@@ -31,6 +31,8 @@ namespace Blog.Entity.Entities
 		public AppUser User { get; set; }
 
 		public Guid UserId { get; set; }
+		public ICollection<ArticleVisitor> ArticleVisitor {  get; set; }
+
 
 
 	}
